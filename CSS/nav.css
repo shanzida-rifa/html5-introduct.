@@ -8,13 +8,23 @@ nav li {
     padding: 10px;
 }
 
-li a {
+nav li a {
     text-decoration: none;
     color: black;
 }
 
 nav li:hover {
     background-color: antiquewhite;
-    padding: 5px;
     border-radius: 5px;
+}
+
+/* nested menu start */
+nav li .dropdown {
+    display: none;
+    position: absolute;
+    background-color: aliceblue;
+}
+
+nav li:hover .dropdown {
+    display: block;
 }
